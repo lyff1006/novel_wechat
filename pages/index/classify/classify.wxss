@@ -1,0 +1,65 @@
+/* pages/index/classify/classify.wxss */
+.bg-color{
+  height: 1200rpx;
+  overflow: hidden;
+  overflow-y: hidden;
+  background: linear-gradient(to bottom,#aed2e8,#427ea1)
+}
+/*标题*/
+.title{
+  text-align: center;
+  font-size: 70rpx;
+  margin: 10rpx 125rpx 50rpx 125rpx;
+  width: 500rpx;
+  border-radius: 50%;
+  color: #ffffff;
+}
+/*列表*/
+.novel-list{
+  height: 1000rpx;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.novel_body{
+  width: 90%;
+  margin-left: 5%;
+}
+.novel_tag{
+  background: #87CEFA;
+  color: #ffffff;
+  float: left;
+  padding: 1px 7px 1px 7px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+.novel_title{
+  border-bottom: solid #f5f5f5 1px;
+  padding: 10px;
+  font-size: 15px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap; 
+  background: #ffffff;
+}
+.novel_info{
+  width: 100%;
+  /*border: solid #C1C1C1 1px;*/
+  
+  background: #ffffff;
+  
+}
+.novel_info_1{
+  font-size: 12px;
+  color: #C1C1C1;
+  text-align: center;
+  width: 50%;
+  float: left;
+  margin-left: 7%;
+}
+.novel_info_2{
+  font-size: 12px;
+  color: #C1C1C1;
+  text-align: center;
+  width: 100%;
+  margin-left: 7%;
+}

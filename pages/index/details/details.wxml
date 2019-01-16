@@ -1,0 +1,8 @@
+<view >
+<view class='bg1'></view>
+  <view wx:for="{{results_info}}">
+    <view class='novel_text'>
+      <view class='novel_text1'>{{item.text}}</view>
+    </view>
+  </view>
+</view>

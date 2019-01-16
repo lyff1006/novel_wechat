@@ -1,0 +1,18 @@
+<!--pages/index/classify/classify.wxml-->
+<view class='bg-color'>
+  <view class='title'>【{{classify}}】微小说</view>
+  <!--文章列表-->
+  <view class='novel-list'>
+    <view class='novel_body' wx:for="{{results_info}}" wx:key>
+      <navigator url="../details/details?novel_num={{item.novel_num}}">
+        <view class='novel_title'>
+          <view class='novel_tag'>{{item.class}}</view>{{item.text}}</view>
+        <view class='novel_info'>
+          <view class='novel_info_1'>阅读量：{{item.read_sum}}</view>
+          <view class='novel_info_2'>点赞数：{{item.praise}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+</view>

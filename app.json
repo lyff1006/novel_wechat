@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/about/about",
+    "pages/index/details/details",
+    "pages/discovery/discovery",
+    "pages/img_text/img_text",
+    "pages/list/list",
+    "pages/index/classify/classify",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微小说",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#007AFF",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "img/home2.png",
+      "selectedIconPath": "img/home1.png"
+    },
+    {
+      "pagePath": "pages/discovery/discovery",
+      "text": "发现",
+      "iconPath": "img/discovery2.png",
+      "selectedIconPath": "img/discovery1.png"
+    },
+    {
+      "pagePath": "pages/about/about",
+      "text": "关于",
+      "iconPath": "img/about2.png",
+      "selectedIconPath": "img/about1.png"
+    }]
+  },
+  "networkTimeout":{
+    "request":10000,
+    "connectScoket":10000,
+    "uploadfile":10000,
+    "downloadfile":10000
+  }
+}

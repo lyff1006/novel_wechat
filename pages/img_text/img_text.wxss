@@ -1,0 +1,28 @@
+/* pages/test2/test2.wxss */
+.bg-color{
+  background-color: #EECFA1;
+  position: absolute;
+  width: 750rpx;
+  height: 100%;
+  z-index: -1
+}
+.img{
+  margin: 0 3% 0 3%;
+  width: 94%;
+  height: 380rpx
+  
+}
+.novel_text{
+  padding: 15px 20px 15px 20px;
+  white-space:pre-wrap;
+  background-color: #EECFA1;
+}
+.novel_text1{
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #FAEBD7;
+  color: #696969;
+}
+.novel_text1 text{
+  white-space: pre-wrap
+}

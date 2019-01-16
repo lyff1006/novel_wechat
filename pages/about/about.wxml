@@ -1,0 +1,13 @@
+<view>
+  <view style='text-align:center'>
+    <image src='../../img/logo.png'></image>
+  </view>
+  <view class='about_info'>
+    <view>微小说过去作为超短篇小说的一个品种而存在， 后来的发展使它已成为一种独立的文学样式，其性质被界定为“介于边缘短篇小说和散文之间的一种边缘性的现代新兴文学体裁”。</view>
+    <view>数据来源：V微小说网、百度贴吧</view>
+    <view>开发者：落叶丶Fly、xgz251391809</view>
+  </view>
+  <view class='share'>
+    <button class='share-btn' open-type='share'>分享给朋友</button>
+  </view>
+</view>

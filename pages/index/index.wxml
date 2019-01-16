@@ -1,0 +1,37 @@
+<!--index.wxml-->
+
+<view>
+  <view class='title'>微小说</view>
+    <!--轮播-->
+    <view class='swiper_img'>
+      <swiper class="swiper" autoplay="true" interval="5000" duration="1000" bindchange="swiperChange" current="{{currentSwiper}}" bindtap='swiper_click'>  
+        <block wx:for="{{imgs}}" wx:key="index">  
+          <swiper-item>
+            <image src="{{item}}" class="swiper_image" mode="aspectFill"  id='index' />  
+          </swiper-item>  
+        </block>  
+      </swiper>
+      <view class="dots">  
+          <block wx:for="{{imgs}}" wx:key>  
+              <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view>  
+          </block>  
+      </view>
+    </view>
+    <!--分类-->
+    <view wx:for="{{classify}}" wx:key>
+      <navigator url="classify/classify?class={{item}}">
+        <view class='classify'>{{item}}</view>
+      </navigator>
+    </view>
+    <!--文章列表-->
+    <view class='novel_body' wx:for="{{results_info}}" wx:key>
+      <navigator url="details/details?novel_num={{item.novel_num}}">
+        <view class='novel_title'><view class='novel_tag'>{{item.class}}</view>{{item.text}}</view>
+        <view class='novel_info'>
+          <view class='novel_info_1'>阅读量：{{item.read_sum}}</view>
+          <view class='novel_info_2'>点赞数：{{item.praise}}</view>
+        </view>
+      </navigator>
+    </view>
+  <view style='text-align:center'>{{title}}</view>
+</view>

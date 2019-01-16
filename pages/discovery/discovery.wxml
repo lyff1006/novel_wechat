@@ -1,0 +1,15 @@
+<view class="class_list">
+  <view class='search'>
+    <input placeholder='请输入搜索信息' bindinput='search'></input>
+    <view class='search_btn'>搜索</view> 
+  </view>
+  <view style='height:50px'></view>
+  <view wx:for="{{arr}}" wx:key>
+    <navigator url="../../../../index/details/details?novel_num={{item.novel_num}}">
+    <view class='class_item'>【{{item.class}}】{{item.text}}</view>
+    </navigator>
+  </view>
+  <view class="class_item class_item_end">
+    {{title}}
+  </view>
+</view>

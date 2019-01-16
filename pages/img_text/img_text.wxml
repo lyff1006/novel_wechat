@@ -1,0 +1,8 @@
+<view class='bg-color'>
+  <view class='novel_text'>
+    <view class='novel_text1'>
+      <image  src='{{img}}' class='img'></image>
+      <text>{{texts}}</text>
+    </view>
+  </view>
+</view>
